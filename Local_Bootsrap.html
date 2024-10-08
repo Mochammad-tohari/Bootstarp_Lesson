@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local</title>
+
+    <!-- Menaggil bootstrap secara local folder -->
+    <link rel="stylesheet" href="./Aset/Bootstrap/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <h1>Local Bootstrap</h1>
+
+    <!-- 
+        Didalam bootstrap kolomnya berjumlah 12
+
+        akan tetapi 12 itu berpengaruh terhadap column/col sebelumnya
+    -->
+
+    <div class="container-fluid">
+        <div class="row kolom-ke-1">
+            <div class="col-sm-4" style="background: red">Col-4</div>
+            <div class="col-sm-8" style="background: #0004ff">
+                Col-8
+                <div class="row kolom-ke-2">
+                    <div class="col-sm-4" style="background: rgb(187, 110, 110)">
+                        Col-4s
+                    </div>
+                    <div class="col-sm-4" style="background: #0004ff">Col-8</div>
+                    <div class="col-sm-4" style="background: #ff00b3">
+                        Col-4
+                        <div class="row kolom-ke-3">
+                            <div class="col-sm-6" style="background: #00ff80">Col-6</div>
+                            <div class="col-sm-6" style="background: #eeff00">Col-6</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./Aset/Bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

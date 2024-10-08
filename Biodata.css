@@ -1,0 +1,65 @@
+/* 
+Override bootstrap style
+*/
+
+/* 
+
+@import "./Konten_Desain.css";
+syntax utk import file css lain
+
+*/
+
+@import "./Konten_Desain.css";
+
+/* 
+
+deklarasi variable
+
+:root {
+    --navbar-height: 56px;
+
+    --footer-height: 72px;
+}
+
+--navbar-height = nama elemen 
+
+*/
+
+:root {
+    --navbar-height: 56px;
+
+    --footer-height: 72px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: white;
+}
+
+.Kostum_Navbar {
+    background: #ffffff;
+    height: var(--navbar-height);
+}
+
+.Footer_Ku {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: var(--footer-height);
+    background: #3a2525;
+    padding: 24px 24px;
+}
+
+.Footer_Ku address {
+    color: white;
+    margin: auto;
+}
+
+.Sesi_Konten {
+    height: calc(100% - var(--navbar-height) - var(--footer-height));
+}
