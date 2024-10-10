@@ -19,6 +19,12 @@ border-radius memberikan efek siku menjadi tumpul
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gmbr1:hover {
+    transform: scale(1.1);
 }
 
 /* .gmbr2 {
@@ -69,6 +75,8 @@ border-radius memberikan efek siku menjadi tumpul
     object-fit: contain;
 
 }
+
+
 
 .Icon_Bahasa_Program_List {
     list-style-type: none;

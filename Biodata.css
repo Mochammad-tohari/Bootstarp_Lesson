@@ -38,8 +38,8 @@ body {
 
 
 .Kostum_Navbar {
-    background: #ffffff;
-    height: var(--navbar-height);
+    min-height: var(--navbar-height);
+    background-color: #dfdfdf;
 }
 
 .Footer_Ku {
@@ -48,7 +48,7 @@ body {
     justify-content: center;
     width: 100%;
     height: var(--footer-height);
-    background: #8b8b8b;
+    background: #242424;
     padding: 24px 24px;
 }
 
@@ -64,4 +64,13 @@ body {
 
 .Card_List {
     margin-left: 50px;
+}
+
+.h1_tulisan {
+    background-image: url("./Aset/Gambar/str.PNG");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    text-align: center;
+    color: #242424;
 }
