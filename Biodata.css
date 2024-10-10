@@ -36,9 +36,6 @@ body {
     height: 100%;
 }
 
-body {
-    background: white;
-}
 
 .Kostum_Navbar {
     background: #ffffff;
@@ -51,7 +48,7 @@ body {
     justify-content: center;
     width: 100%;
     height: var(--footer-height);
-    background: #3a2525;
+    background: #8b8b8b;
     padding: 24px 24px;
 }
 
@@ -61,5 +58,10 @@ body {
 }
 
 .Sesi_Konten {
-    height: calc(100% - var(--navbar-height) - var(--footer-height));
+    min-height: calc(100% - var(--navbar-height) - var(--footer-height));
+    background: #ebe5e5;
+}
+
+.Card_List {
+    margin-left: 50px;
 }
