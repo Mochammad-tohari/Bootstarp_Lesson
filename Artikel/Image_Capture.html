@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Capture</title>
+    <script>
+        function myFunction() {
+            // Get the image element by its ID
+            var img = document.getElementById("Gambar");
+
+            // Create a new window
+            var newWindow = window.open("", "", "width=800, height=600");
+
+            // Write the image HTML to the new window
+            newWindow.document.write('<html><head><title>Print Image</title></head><body>');
+            newWindow.document.write('<img src="' + img.src + '" alt="Image">');
+            newWindow.document.write('</body></html>');
+
+            // Print the content of the new window
+            newWindow.document.close(); // Close the document to finish loading
+            newWindow.focus(); // Focus on the new window
+            newWindow.print(); // Trigger the print
+            newWindow.close(); // Close the window after printing
+        }
+    </script>
+</head>
+
+<body>
+
+    <img src="../Aset/Gambar/hnsmandbrv.PNG" alt="Image" id="Gambar">
+
+    <!-- Button to trigger the print function -->
+    <button onclick="myFunction()">Print this image</button>
+
+</body>
+
+</html>
